@@ -59,7 +59,7 @@ jobs:
           username: ${{ secrets.USER }}
           key: ${{ secrets.SSH_KEY }}
           script: |
-            # Выполняет pull образа с DockerHub
+            # Выполняет pull  образа с DockerHub
             sudo docker pull yaoktut/infra_actions
             #остановка всех контейнеров
             sudo docker stop $(sudo docker ps -a -q)
